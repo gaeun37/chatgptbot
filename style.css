@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+* {
+    font-family: 'Playwrite DE Grund', sans-serif;
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+.container {
+    max-width: 920px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: cadetblue;
+    border-bottom: 1px solid white;
+    height: 45px;
+}
+
+.header h3 {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex:20;
+}
+
+.info a {
+    color: cornflowerblue;
+    font-size: 25px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.info a:hover {
+    color: darkblue;
+}
+
+.input-container {
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-top: 1px solid white;
+    position: sticky;
+    bottom: 0;
+}
+
+#user-input {
+    flex: auto;
+    padding: 10px;
+    color: cadetblue;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    outline: invert;
+    outline-color: cornflowerblue;
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+
+#user-input::placeholder {
+    color: cornflowerblue;
+    font-weight: 500;
+}
+
+#send-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: cornflowerblue;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+}
+
+#send-button:hover {
+    background-color: cadetblue;
+}
+
+#button-icon {
+    color: white;
+}
+
+.chat-container {
+    flex: 1;
+}
+
+.chat-box {
+    display:flex;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+#chat-log {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+#chat-log i {
+    margin-right: 10px;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.bot, .user {
+    display: flex;
+    align-items: flex-start;
+    color: #eeeeee;
+    width: 100%;
+    padding: 15px 7px 15px 10px;
+    border-radius: 6px;
+}
+
+.bot {
+    background-color: #414153;
+}
+
+.user{
+    color: cadetblue;
+}
+
+#chat-log #user-icon i {
+    background-color: #31a688;
+    padding: 10px 11px;
+}
+
+#chat-log #bot-icon i {
+    background-color: #9a6ecc;
+    padding: 10px 11px;
+}
